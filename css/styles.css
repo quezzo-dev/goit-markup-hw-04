@@ -33,6 +33,15 @@ body {
   line-height: 1.5;
 }
 
+.contacts-link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
 .header .contacts-link {
   color: var(--grey-color);
 }
@@ -82,6 +91,22 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.contacts-list-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+}
+
 /* ========== END COMPONENTS ========== */
 
 /* ========== HEADER ========== */
@@ -210,33 +235,6 @@ img {
 
 .about-list-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.about-list-item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: var(--light-white-color);
-}
-
-.icon-antenna::before {
-  background-image: url('../../images/antenna.svg');
-}
-
-.icon-clock::before {
-  background-image: url('../../images/clock.svg');
-}
-
-.icon-diagram::before {
-  background-image: url('../../images/diagram.svg');
-}
-
-.icon-astronaut::before {
-  background-image: url('../../images/astronaut.svg');
 }
 
 .our-work .title,
