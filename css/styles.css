@@ -5,6 +5,7 @@
   --white-color: #ffffff;
   --background-color: #2f303a;
   --light-white-color: #f5f4fa;
+  --svg-color: #afb1b8;
 }
 
 body {
@@ -33,17 +34,15 @@ body {
   line-height: 1.5;
 }
 
-.contacts-link {
+.header .contacts-link {
+  color: var(--grey-color);
   display: flex;
   align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-}
-
-.header .contacts-link {
-  color: var(--grey-color);
+  padding: 0;
 }
 
 .contacts-link:hover,
@@ -55,6 +54,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 }
 
 .curent {
@@ -107,6 +107,19 @@ img {
   height: 16px;
 }
 
+.about-list-icon {
+  display: block;
+  background-color: var(--light-white-color);
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px 25px 100px;
+  margin-bottom: 30px;
+  fill: var(--black-color);
+}
+
+svg {
+  fill: var(--svg-color);
+}
 /* ========== END COMPONENTS ========== */
 
 /* ========== HEADER ========== */
@@ -231,6 +244,7 @@ img {
 
 .about-list-item {
   max-width: 270px;
+  height: 251px;
 }
 
 .about-list-item:not(:last-child) {
@@ -281,9 +295,69 @@ img {
   display: flex;
 }
 
+.team-social-list {
+  display: flex;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.team-social-list-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.team-social-list-item:hover,
+.team-social-list-item:focus {
+  background-color: var(--blue-color);
+}
+
+.team-social-list-item:hover .social-svg,
+.team-social-list-item:focus .social-svg {
+  fill: var(--white-color);
+}
+
+.social-svg {
+  width: 20px;
+  height: 20px;
+}
+
 .card-info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
+}
+
+.client-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-item {
+  padding: 16px 32px 16px 32px;
+  border: 1px solid var(--svg-color);
+  border-radius: 4px;
+}
+
+.client-svg {
+  width: 106px;
+  height: 60px;
+}
+
+.client-item:hover,
+.client-item:focus {
+  border: 1px solid var(--blue-color);
+}
+
+.client-item:hover .client-svg,
+.client-item:focus .client-svg {
+  fill: var(--blue-color);
 }
 
 /* PORTFOLIO.HTML */
@@ -308,6 +382,7 @@ img {
 .filtr-nav button:focus {
   background-color: var(--blue-color);
   color: var(--white-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .filtr-nav-item:not(:last-child) {
@@ -325,6 +400,11 @@ img {
   margin-right: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
+}
+
+.projects-item:hover,
+.projects-item:focus {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .projects-title {
@@ -346,6 +426,7 @@ img {
   border-bottom: 1px solid #eeeeee;
   padding: 20px 24px 20px 24px;
 }
+
 /* ========== END MAIN ========== */
 
 /* ========== FOOTER ========== */
@@ -354,6 +435,10 @@ img {
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
 }
 
 .footer .contacts-link {
@@ -388,6 +473,56 @@ img {
 .office-address,
 .footer .contacts-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.social-title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.social-footer {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.footer-social {
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer-social-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-social-item:hover,
+.footer-social-item:focus {
+  background-color: var(--blue-color);
+}
+
+.footer-social-item:hover .footer-svg,
+.footer-social-item:focus .footer-svg {
+  fill: var(--white-color);
 }
 
 /* ========== END FOOTER ========== */
